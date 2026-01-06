@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Hosting | Drago Nodes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-200 font-inter">
+    
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-cyan-500 mx-auto mb-6 shadow-[0_0_20px_rgba(6,182,212,0.5)]"></div>
+            <h2 class="text-2xl md:text-3xl font-poppins font-bold text-white tracking-widest animate-pulse">
+                SEEKING YOU INTO <span class="text-cyan-400">Drago NODEZ</span>
+            </h2>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 top-0 bg-[#05050a]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                    <i class="fa-solid fa-server text-cyan-400 text-2xl"></i>
+                    <span class="font-poppins font-bold text-2xl text-white">Drago <span class="text-cyan-400">NODES</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="minecraft.html" class="text-cyan-400 px-3 py-2 rounded-md text-sm font-medium border-b border-cyan-400">Minecraft</a>
+                        <a href="vps.html" class="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium">VPS</a>
+                        <a href="services.html" class="text-gray-300 hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="payment.html" class="bg-white text-black px-4 py-2 rounded-full font-bold hover:scale-105 transition">Client Panel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-poppins font-bold text-white mb-4">Pick Your <span class="text-cyan-400">Block</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                Premium Minecraft hosting powered by high-frequency Ryzen processors.
+            </p>
+        </div>
+
+        <!-- Plans Grid (Images replaced with Icons) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <!-- Sproutling -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-green-500 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-green-500/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-500/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-leaf text-green-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Sproutling</h3>
+                        <span class="text-xs text-green-400 uppercase font-bold tracking-wider">Starter</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹70<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-green-400"></i> 2GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-green-400"></i> 5GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-green-400"></i> 100% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-green-600 hover:bg-green-500 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-green-500/20">Order Now</a>
+            </div>
+
+            <!-- Granite -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-red-400 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                 <div class="absolute top-0 right-0 w-24 h-24 bg-red-400/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-red-400/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-cubes text-red-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Granite</h3>
+                        <span class="text-xs text-red-400 uppercase font-bold tracking-wider">Basic</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹140<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-red-400"></i> 4GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-red-400"></i> 10GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-red-400"></i> 150% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-red-500 hover:bg-red-400 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-red-500/20">Order Now</a>
+            </div>
+
+            <!-- Forge -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-gray-300 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-gray-300/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gray-300/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-hammer text-gray-300 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Forge</h3>
+                        <span class="text-xs text-gray-300 uppercase font-bold tracking-wider">Standard</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹200<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-gray-300"></i> 6GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-gray-300"></i> 15GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-gray-300"></i> 200% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-gray-600 hover:bg-gray-500 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-gray-500/20">Order Now</a>
+            </div>
+
+            <!-- Aurora -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-yellow-400 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-yellow-400/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-yellow-400/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-sun text-yellow-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Aurora</h3>
+                        <span class="text-xs text-yellow-400 uppercase font-bold tracking-wider">Advanced</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹280<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-yellow-400"></i> 8GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-yellow-400"></i> 20GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-yellow-400"></i> 250% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-yellow-500 hover:bg-yellow-400 text-black py-3 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">Order Now</a>
+            </div>
+
+            <!-- Prism -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-cyan-400 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-400/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-cyan-400/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-gem text-cyan-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Prism</h3>
+                        <span class="text-xs text-cyan-400 uppercase font-bold tracking-wider">Pro</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹360<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-cyan-400"></i> 10GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-cyan-400"></i> 25GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-cyan-400"></i> 300% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-cyan-500 hover:bg-cyan-400 text-black py-3 rounded-xl font-bold transition shadow-lg shadow-cyan-500/20">Order Now</a>
+            </div>
+
+            <!-- Jadeite -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-emerald-500 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-emerald-500/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-diamond text-emerald-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Jadeite</h3>
+                        <span class="text-xs text-emerald-400 uppercase font-bold tracking-wider">Elite</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹440<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-emerald-400"></i> 12GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-emerald-400"></i> 30GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-emerald-400"></i> 350% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-emerald-500/20">Order Now</a>
+            </div>
+
+            <!-- Onyx -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-gray-800 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                 <div class="absolute top-0 right-0 w-24 h-24 bg-gray-800/30 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gray-800/50 rounded-xl animate-float">
+                        <i class="fa-solid fa-moon text-gray-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Onyx</h3>
+                        <span class="text-xs text-gray-400 uppercase font-bold tracking-wider">Network</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹560<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-purple-400"></i> 16GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-purple-400"></i> 40GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-purple-400"></i> 400% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-gray-800 hover:bg-gray-700 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-gray-800/20">Order Now</a>
+            </div>
+
+            <!-- Titan -->
+            <div class="glass-card p-6 rounded-2xl border-t-4 border-purple-600 hover:scale-[1.02] transition-transform relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-purple-600/10 rounded-bl-full -mr-4 -mt-4"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-600/20 rounded-xl animate-float">
+                        <i class="fa-solid fa-dragon text-purple-400 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Titan</h3>
+                        <span class="text-xs text-purple-400 uppercase font-bold tracking-wider">Supreme</span>
+                    </div>
+                </div>
+                <div class="text-3xl font-mono font-bold text-white mb-2">₹700<span class="text-sm text-gray-400 font-sans">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-memory text-purple-400"></i> 20GB RAM</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-hard-drive text-purple-400"></i> 50GB NVMe SSD</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-purple-400"></i> 500% CPU</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-purple-600 hover:bg-purple-500 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-purple-500/20">Order Now</a>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Mandatory Badge -->
+    <div class="fixed bottom-4 right-4 bg-white text-black font-bold px-4 py-2 rounded-lg shadow-2xl z-[9999] hover:scale-105 transition-transform duration-300 border border-gray-200 text-xs md:text-sm">
+        Powered By Yash
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPS Hosting | Drago Nodes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-200 font-inter">
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-cyan-500 mx-auto mb-6 shadow-[0_0_20px_rgba(6,182,212,0.5)]"></div>
+            <h2 class="text-2xl md:text-3xl font-poppins font-bold text-white tracking-widest animate-pulse">
+                SEEKING YOU INTO <span class="text-cyan-400">Drago NODES</span>
+            </h2>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 top-0 bg-[#05050a]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                <i class="fa-solid fa-server text-cyan-400 text-2xl"></i>
+                <span class="font-poppins font-bold text-2xl text-white">Drago <span class="text-cyan-400">NODES</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 font-medium">Home</a>
+                <a href="minecraft.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 font-medium">Minecraft</a>
+                <a href="vps.html" class="text-cyan-400 px-3 py-2 font-medium border-b border-cyan-400">VPS</a>
+                <a href="services.html" class="text-gray-300 hover:text-green-400 px-3 py-2 font-medium">Services</a>
+                <a href="payment.html" class="bg-white text-black px-4 py-2 rounded-full font-bold hover:scale-105 transition">Client Panel</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 pb-12 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10 animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-poppins font-bold text-white mb-4">Virtual Private Servers</h1>
+            <p class="text-gray-400">Root access. Dedicated resources. Instant Provisioning.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex justify-center gap-4 mb-12 flex-wrap animate-fade-in-up delay-100">
+            <button class="tab-link px-6 py-3 rounded-lg font-bold bg-cyan-600 text-white shadow-lg shadow-cyan-500/30 transition-all" onclick="openTab(event, 'xeon')"><i class="fa-solid fa-microchip mr-2"></i> Intel Xeon</button>
+            <button class="tab-link px-6 py-3 rounded-lg font-bold bg-gray-900/50 text-gray-400 border border-white/5 hover:bg-gray-800 transition-all" onclick="openTab(event, 'platinum')"><i class="fa-solid fa-rocket mr-2"></i> Intel Platinum</button>
+            <button class="tab-link px-6 py-3 rounded-lg font-bold bg-gray-900/50 text-gray-400 border border-white/5 hover:bg-gray-800 transition-all" onclick="openTab(event, 'epyc')"><i class="fa-solid fa-bolt mr-2"></i> AMD EPYC</button>
+        </div>
+
+        <!-- Intel Xeon Tab -->
+        <div id="xeon" class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up">
+            <!-- Node 1 -->
+            <div class="glass-card p-6 rounded-xl border-t-2 border-cyan-500">
+                <h3 class="text-xl font-bold text-white mb-2">Legend Node 1</h3>
+                <div class="text-3xl font-mono font-bold text-cyan-400 mb-4">₹650<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-6">
+                    <li><i class="fa-solid fa-microchip w-5 text-cyan-500"></i> 8 vCores</li>
+                    <li><i class="fa-solid fa-memory w-5 text-cyan-500"></i> 16GB RAM</li>
+                    <li><i class="fa-solid fa-hard-drive w-5 text-cyan-500"></i> 100GB SSD</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-cyan-600/20 hover:bg-cyan-600 text-cyan-400 hover:text-white py-2 rounded font-bold transition">Order Now</a>
+            </div>
+            <!-- Node 2 -->
+            <div class="glass-card p-6 rounded-xl border-t-2 border-cyan-500">
+                <h3 class="text-xl font-bold text-white mb-2">Legend Node 2</h3>
+                <div class="text-3xl font-mono font-bold text-cyan-400 mb-4">₹850<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-6">
+                    <li><i class="fa-solid fa-microchip w-5 text-cyan-500"></i> 12 vCores</li>
+                    <li><i class="fa-solid fa-memory w-5 text-cyan-500"></i> 32GB RAM</li>
+                    <li><i class="fa-solid fa-hard-drive w-5 text-cyan-500"></i> 180GB SSD</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-cyan-600/20 hover:bg-cyan-600 text-cyan-400 hover:text-white py-2 rounded font-bold transition">Order Now</a>
+            </div>
+            <!-- Node 3 -->
+            <div class="glass-card p-6 rounded-xl border-t-2 border-cyan-500">
+                <h3 class="text-xl font-bold text-white mb-2">Legend Node 3</h3>
+                <div class="text-3xl font-mono font-bold text-cyan-400 mb-4">₹1250<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-6">
+                    <li><i class="fa-solid fa-microchip w-5 text-cyan-500"></i> 16 vCores</li>
+                    <li><i class="fa-solid fa-memory w-5 text-cyan-500"></i> 48GB RAM</li>
+                    <li><i class="fa-solid fa-hard-drive w-5 text-cyan-500"></i> 256GB SSD</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-cyan-600/20 hover:bg-cyan-600 text-cyan-400 hover:text-white py-2 rounded font-bold transition">Order Now</a>
+            </div>
+            <!-- Node 4 -->
+            <div class="glass-card p-6 rounded-xl border-t-2 border-cyan-500">
+                <h3 class="text-xl font-bold text-white mb-2">Legend Node 4</h3>
+                <div class="text-3xl font-mono font-bold text-cyan-400 mb-4">₹1600<span class="text-sm text-gray-400">/mo</span></div>
+                <ul class="space-y-3 text-sm text-gray-300 mb-6">
+                    <li><i class="fa-solid fa-microchip w-5 text-cyan-500"></i> 20 vCores</li>
+                    <li><i class="fa-solid fa-memory w-5 text-cyan-500"></i> 64GB RAM</li>
+                    <li><i class="fa-solid fa-hard-drive w-5 text-cyan-500"></i> 256GB SSD</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-cyan-600/20 hover:bg-cyan-600 text-cyan-400 hover:text-white py-2 rounded font-bold transition">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Intel Platinum Tab -->
+        <div id="platinum" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+             <div class="glass-card p-6 rounded-xl border-t-2 border-blue-500">
+                <h3 class="text-lg font-bold text-white">Spark</h3>
+                <div class="text-2xl font-mono font-bold text-blue-400 mb-4">₹350</div>
+                <ul class="space-y-2 text-xs text-gray-300 mb-4">
+                    <li>2 vCores</li>
+                    <li>4 GB RAM ECC</li>
+                    <li>20 GB NVMe</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-blue-600/20 hover:bg-blue-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-blue-500">
+                <h3 class="text-lg font-bold text-white">Blade</h3>
+                <div class="text-2xl font-mono font-bold text-blue-400 mb-4">₹650</div>
+                <ul class="space-y-2 text-xs text-gray-300 mb-4">
+                    <li>4 vCores</li>
+                    <li>8 GB RAM ECC</li>
+                    <li>40 GB NVMe</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-blue-600/20 hover:bg-blue-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-blue-500">
+                <h3 class="text-lg font-bold text-white">Titan</h3>
+                <div class="text-2xl font-mono font-bold text-blue-400 mb-4">₹1100</div>
+                <ul class="space-y-2 text-xs text-gray-300 mb-4">
+                    <li>6 vCores</li>
+                    <li>16 GB RAM ECC</li>
+                    <li>60 GB NVMe</li>
+                </ul>
+                <a href="payment.html" class="block w-full text-center bg-blue-600/20 hover:bg-blue-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-blue-500">
+               <h3 class="text-lg font-bold text-white">Guardian</h3>
+               <div class="text-2xl font-mono font-bold text-blue-400 mb-4">₹1450</div>
+               <ul class="space-y-2 text-xs text-gray-300 mb-4">
+                   <li>10 vCores</li>
+                   <li>32 GB RAM ECC</li>
+                   <li>100 GB NVMe</li>
+               </ul>
+               <a href="payment.html" class="block w-full text-center bg-blue-600/20 hover:bg-blue-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+           </div>
+           <div class="glass-card p-6 rounded-xl border-t-2 border-blue-500">
+               <h3 class="text-lg font-bold text-white">Apex</h3>
+               <div class="text-2xl font-mono font-bold text-blue-400 mb-4">₹2500</div>
+               <ul class="space-y-2 text-xs text-gray-300 mb-4">
+                   <li>20 vCores</li>
+                   <li>64 GB RAM ECC</li>
+                   <li>200 GB NVMe</li>
+               </ul>
+               <a href="payment.html" class="block w-full text-center bg-blue-600/20 hover:bg-blue-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+           </div>
+        </div>
+
+        <!-- AMD EPYC Tab -->
+        <div id="epyc" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card p-6 rounded-xl border-t-2 border-red-500">
+                <h3 class="text-lg font-bold text-white">EPYC XS</h3>
+                <div class="text-2xl font-mono font-bold text-red-400 mb-2">₹400</div>
+                <p class="text-xs text-gray-400 mb-3">2 vCores • 6GB RAM</p>
+                <a href="payment.html" class="block w-full text-center bg-red-600/20 hover:bg-red-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-red-500">
+                <h3 class="text-lg font-bold text-white">EPYC S</h3>
+                <div class="text-2xl font-mono font-bold text-red-400 mb-2">₹600</div>
+                <p class="text-xs text-gray-400 mb-3">2 vCores • 8GB RAM</p>
+                <a href="payment.html" class="block w-full text-center bg-red-600/20 hover:bg-red-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-red-500">
+                <h3 class="text-lg font-bold text-white">EPYC L</h3>
+                <div class="text-2xl font-mono font-bold text-red-400 mb-2">₹1000</div>
+                <p class="text-xs text-gray-400 mb-3">6 vCores • 16GB RAM</p>
+                <a href="payment.html" class="block w-full text-center bg-red-600/20 hover:bg-red-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-2 border-red-500">
+                <h3 class="text-lg font-bold text-white">EPYC 3XL</h3>
+                <div class="text-2xl font-mono font-bold text-red-400 mb-2">₹2600</div>
+                <p class="text-xs text-gray-400 mb-3">12 vCores • 64GB RAM</p>
+                <a href="payment.html" class="block w-full text-center bg-red-600/20 hover:bg-red-600 text-white py-2 rounded font-bold text-sm transition">Order</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Mandatory Badge -->
+    <div class="fixed bottom-4 right-4 bg-white text-black font-bold px-4 py-2 rounded-lg shadow-2xl z-[9999] hover:scale-105 transition-transform duration-300 border border-gray-200 text-xs md:text-sm">
+        Powered By Yash
+    </div>
+</body>
+</html>
